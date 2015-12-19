@@ -1,0 +1,160 @@
+html {
+	/*height: 100%; Para que se ocupe toda la pantalla*/
+}
+
+body {
+	/*margin: 0;*/
+	padding: 64px 0 0 0; /*Separa el main-conteiner del main-header */
+	/*height: 100%;*/
+	font-family: RobotoDraft; /*Cambia el tipo de letra a todo lo contenido en el body*/
+	background-color: #2196F3;
+	/*color: #000;*/ /*No funciona porque después a todo le cambio la letra*/
+}
+
+ul {
+	/*Para que quede centrada la lista*/
+	margin: 0;
+	padding: 0;
+}
+
+#main-header {
+	width: 100%; /*Hace que tome todo el ancho de la pantalla.*/
+	height: 64px;
+	position: fixed; /*Deja fijo el header principal de la pantalla*/
+	top: 0; /*Hace que comience al principio del navegador*/
+	background-color: #FFE57F;
+	color: #212121;
+	box-shadow: 0 6px 7px rgba(0, 0, 0, 0.14); /*Genera una sombra debajo del header*/
+}
+
+#main-header h2 {
+	margin: 17px 0 0 35px; /*Acomoda el titulo de acuerdo al margen.*/
+	text-transform: uppercase; /*Transforma el texto en mayusculas*/
+	letter-spacing: 4px; /*Define la separación entre las letras del titulo*/
+	font-size: 20px; /*Define el tamaño del titulo*/
+	font-weight: 400; /*Hace gruesa a la letra*/
+	float: left; /*Saca al enlace del flujo normal y lo pone a la izquierda del main-header, 
+	donde los elementos de texto y los en línea aparecerán a su alrededor.*/
+}
+
+#main-header a {
+	margin: 20px 20px 0 0; /*Acomoda el el enlace en la parte derecha del header principal*/
+	text-transform: uppercase;/*trasnforma el texto en mayusculas*/
+	letter-spacing: 2px; /*Define la separación entre las letras del enlace*/
+	font-size: 15px; /*Define el tamaño del enlace*/
+	float: right; /*Saca al enlace del flujo normal y lo pone a la derecha del main-header*/
+	color: #212121; /*Pone el color a la letra*/
+	text-decoration: none; /*Para que no se subrraye el enlace*/
+}
+
+/*aside*/
+#main-container aside#main-nav {
+	position: fixed; /*Coloca de manera fija el mavegador principal*/
+	top: 120px; /*Separa el navegador*/
+	left: 50px; /*Separa el navegador*/
+	width: 20%; /*Define el tamaño del navegador*/
+	background-color: #FFE57F;
+	color: #212121;
+	text-align: center; /*Central el texto*/
+	border-radius: 1px; /*Redonde el borde de el navegador*/
+	/*Pone sombre debajo del navegador*/
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+#main-container #main-nav nav li{
+	height: 60px;
+	font-weight: 400; /*Da grosor a la letra*/
+	line-height: 53px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: all .8s; 
+	cursor: pointer;
+}
+
+#main-container #main-nav nav li:hover{
+	background-color: #DC3F1C;
+	color: #fff;
+}
+
+/*sections*/
+#main-container #main-sections-container{
+	float: right;
+	width: 65%;
+	margin: 56px 50px 0 0;
+}
+
+#main-container #main-sections-container section{
+	margin: 0 0 10px 0;
+	background-color: #FFE57F;
+	color: #448D7A;
+	border-radius: 1px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+#main-container #main-sections-container section header{
+	width: 200px;
+	margin: -8px 0 0 -8px;
+	background-color: #DC3F1C;
+	padding: 8px;
+	text-align: center;
+	min-height: 30px;
+	color: #fff;
+	float: left;
+}
+
+#main-container #main-sections-container section header h2{
+	margin: 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 26px;
+}
+
+#main-container #main-sections-container section div.full{
+	float: right;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #2196F3;
+	color: #fff;
+	margin: 15px 15px 45px 15px;
+}
+
+#main-container #main-sections-container section div.full span{
+	position: relative;
+	top: 17px;
+	font-size: 11px;
+	left: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+#main-container #main-sections-container section div.full:hover{
+	background-color: #DC3F1C;
+	cursor: pointer;
+	width: 100px;
+	height: 100px;
+	transition: all 1s ease;
+}
+
+#main-container #main-sections-container section article{
+	clear: right;
+	height: 200px;
+	background-color: #FFE57F;
+	color: #000;
+	overflow: hidden;
+	border-style: solid;
+}
+
+#main-container #main-sections-container section article img{
+	float: left;
+	margin-right: 15px;
+}
+
+#main-container #main-sections-container section article p{
+	margin: 10px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	text-align: justify;
+}
