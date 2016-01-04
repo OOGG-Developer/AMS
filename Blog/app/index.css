@@ -1,86 +1,159 @@
 html {
-	/*height: 100%; Para que se ocupe toda la pantalla*/
+	height: 100%;
 }
 
 body {
-	/*margin: 0;*/
-	padding: 64px 0 0 0; /*Separa el main-conteiner del main-header */
-	/*height: 100%;*/
-	font-family: RobotoDraft; /*Cambia el tipo de letra a todo lo contenido en el body*/
+	padding: 64px 0 0 0;
+	height: 100%;
+	font-family: RobotoDraft;
 	background-color: #2196F3;
-	/*color: #000;*/ /*No funciona porque después a todo le cambio la letra*/
 }
 
 ul {
-	/*Para que quede centrada la lista*/
+	/*Para centrar la lista*/
 	margin: 0;
 	padding: 0;
 }
 
 #main-header {
-	width: 100%; /*Hace que tome todo el ancho de la pantalla.*/
+	width: 100%;
 	height: 64px;
-	position: fixed; /*Deja fijo el header principal de la pantalla*/
+	position: fixed; /*Para fijar el header en la parte superior de la página*/
 	top: 0; /*Hace que comience al principio del navegador*/
 	background-color: #FFE57F;
 	color: #212121;
 	box-shadow: 0 6px 7px rgba(0, 0, 0, 0.14); /*Genera una sombra debajo del header*/
+	z-index: 9999;
 }
 
-#main-header h2 {
-	margin: 17px 0 0 35px; /*Acomoda el titulo de acuerdo al margen.*/
-	text-transform: uppercase; /*Transforma el texto en mayusculas*/
-	letter-spacing: 4px; /*Define la separación entre las letras del titulo*/
-	font-size: 20px; /*Define el tamaño del titulo*/
-	font-weight: 400; /*Hace gruesa a la letra*/
+#main-header h1 {
+	margin: 17px 0 0 35px;
+	text-transform: uppercase; /*Transforma el texto en mayúsculas*/
+	letter-spacing: 4px; /*Define la separación entre las letras del título*/
+	font-size: 20px;
+	font-weight: 400; /*Define el grosor de la letra*/
 	float: left; /*Saca al enlace del flujo normal y lo pone a la izquierda del main-header, 
 	donde los elementos de texto y los en línea aparecerán a su alrededor.*/
 }
-
-#main-header a {
-	margin: 20px 20px 0 0; /*Acomoda el el enlace en la parte derecha del header principal*/
-	text-transform: uppercase;/*trasnforma el texto en mayusculas*/
-	letter-spacing: 2px; /*Define la separación entre las letras del enlace*/
-	font-size: 15px; /*Define el tamaño del enlace*/
-	float: right; /*Saca al enlace del flujo normal y lo pone a la derecha del main-header*/
-	color: #212121; /*Pone el color a la letra*/
-	text-decoration: none; /*Para que no se subrraye el enlace*/
+@media (max-width: 375px){
+   #main-header h1 {
+	 font-size: 12px;
+	 margin: 25px 0 0 35px;
+   }
 }
 
-/*aside*/
+#main-header a {
+	margin: 20px 20px 0 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 15px; 
+	float: right; /*Saca al enlace del flujo normal y lo pone a la derecha del main-header*/
+	color: #212121;
+	text-decoration: none; /*Para que no se subrraye el enlace*/
+}
+@media (max-width: 375px){
+   #main-header a {
+	 display: none;
+   }
+}
+/*Para dibujar el botón del menú*/
+#main-header div#boton{
+	float: left;
+     margin: 12px 0px 0px 120px;
+     width: 40px;
+     height: 40px;
+	display: none; /*Para ocultar el botón*/
+}
+@media (max-width: 375px) {
+   #main-header div#boton{
+     float: left;
+     margin: 12px 0px 0px 120px;
+     width: 40px;
+     height: 40px;
+	 display: block;
+	 transition: all 1s ease;
+   }
+}
+
+#main-header div#boton span{
+	border-radius: 15%;
+    background-color: #212121;
+    margin: 20px 0 0 5px;
+    width: 30px;
+    height: 4px;
+	display: block;
+	position:absolute;
+	transition: all .3s;
+}
+/*Hace una copia virtual del span*/
+#main-header div#boton span::before{
+	border-radius: 15%;
+    background-color: #212121;
+    margin: -11px 0px 0 0px;
+    width: 30px;
+    height: 4px;
+	display: block;
+	content:''; /*Necesita está linea para ser visible*/
+	position:absolute;
+}
+/*Hace una copia virtual del span*/
+#main-header div#boton span::after{
+	border-radius: 15%;
+    background-color: #212121;
+    margin: 10px 0 0 0px;
+    width: 30px;
+    height: 4px;
+	display: block;
+	content:''; /*Necesita está linea para ser visible*/
+	position:absolute;
+}
+
 #main-container aside#main-nav {
-	position: fixed; /*Coloca de manera fija el mavegador principal*/
-	top: 120px; /*Separa el navegador*/
-	left: 50px; /*Separa el navegador*/
-	width: 20%; /*Define el tamaño del navegador*/
+	position: fixed; /*Coloca el menú fijamente a la izquierda de la página*/
+	top: 120px;
+	left: 50px;
+	width: 20%;
 	background-color: #FFE57F;
 	color: #212121;
-	text-align: center; /*Central el texto*/
-	border-radius: 1px; /*Redonde el borde de el navegador*/
-	/*Pone sombre debajo del navegador*/
+	text-align: center;
+	border-radius: 1px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 375px) {
+  #main-container aside#main-nav {
+	 width : 100%;
+	 top :10px;
+	 left : 0px;
+	 position :relative;
+	 display:none;
+  }
 }
 
 #main-container #main-nav nav li{
 	height: 60px;
-	font-weight: 400; /*Da grosor a la letra*/
+	font-weight: 400;
 	line-height: 53px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	transition: all .8s; 
-	cursor: pointer;
+	transition: all .8s; /*Para que al momento de pasar el cursor sobre el menú, tarde un poco en cambiar el color*/
+	cursor: pointer; /*Para que el cursor salga en forma de manita*/
 }
-
+/*Para saber si el curso a pasado por encima de alguna opción del menú*/
 #main-container #main-nav nav li:hover{
 	background-color: #DC3F1C;
 	color: #fff;
 }
-
-/*sections*/
+/*Se coloca la sección principal de la página a la derecha, sacandola del flujo*/
 #main-container #main-sections-container{
 	float: right;
 	width: 65%;
 	margin: 56px 50px 0 0;
+}
+@media (max-width: 375px) {
+    #main-container #main-sections-container{
+		width: 100%;
+		margin: 10px 0 0 0;
+	}	
 }
 
 #main-container #main-sections-container section{
@@ -89,6 +162,11 @@ ul {
 	color: #448D7A;
 	border-radius: 1px;
 	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 375px) {
+    #main-container #main-sections-container section{
+	  position: relative;
+	}	
 }
 
 #main-container #main-sections-container section header{
@@ -99,7 +177,15 @@ ul {
 	text-align: center;
 	min-height: 30px;
 	color: #fff;
-	float: left;
+	float: left; /*Coloca el título de la sección a la izquierda*/
+}
+@media (max-width: 375px) {
+    #main-container #main-sections-container section header{
+	   width: 200px;
+	   margin: 0 0 10px 81px;
+	   float:none;
+	   min-height: 20px;
+	}	
 }
 
 #main-container #main-sections-container section header h2{
@@ -110,9 +196,15 @@ ul {
 	font-weight: 400;
 	line-height: 26px;
 }
+@media (max-width: 375px) {
+    #main-container #main-sections-container section header h2{
+	   letter-spacing: 3px;
+	   font-size: 11px;
+	}	
+}
 
 #main-container #main-sections-container section div.full{
-	float: right;
+	float: right; /*Coloca el div/botón en la parte derecha de la sección*/
 	width: 60px;
 	height: 60px;
 	border-radius: 50%;
@@ -120,16 +212,40 @@ ul {
 	color: #fff;
 	margin: 15px 15px 45px 15px;
 }
+@media (max-width: 375px) {
+  #main-container #main-sections-container section div.full{
+	  position: absolute;
+	  background-color: #DC3F1C;
+	  bottom: -20px;
+	  left: 150px;
+  }
+}
 
 #main-container #main-sections-container section div.full span{
-	position: relative;
+	position: relative; /*Pone el texto relativo al div/botón*/
 	top: 17px;
 	font-size: 11px;
 	left: 12px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+/*Realiza cambios al pasar el cursor por el texto del div/botón*/
+#main-container #main-sections-container section div.full:hover span {
+	font-size: 18px; 
+	position: relative;
+	top: 40px;
+	left: 22px;
+	transition: all .9s ease; /*La transición de boton tarda casi un segundo, para hacer notorio el cambio*/
+} 
+@media (max-width: 375px) {
+    #main-container #main-sections-container section div.full:hover span {
+	  font-size: 15px;
+	  top: 30px;
+	  left: 17px;
+	}	
+}
 
+/*Se realizan los cambios al pasar el cursor sobre el div/botón*/
 #main-container #main-sections-container section div.full:hover{
 	background-color: #DC3F1C;
 	cursor: pointer;
@@ -137,24 +253,53 @@ ul {
 	height: 100px;
 	transition: all 1s ease;
 }
+@media (max-width: 375px) {
+    #main-container #main-sections-container section div.full:hover{
+	  left: 140px;	  
+	  bottom: -40px;
+	  width: 80px;
+	  height: 80px;	 
+	}	
+}
 
 #main-container #main-sections-container section article{
-	clear: right;
+	clear: right; /*Para que limpie el float rigth*/
 	height: 200px;
 	background-color: #FFE57F;
 	color: #000;
-	overflow: hidden;
+	overflow: hidden; /*Para esconder el scroll*/
 	border-style: solid;
+}
+@media (max-width: 375px) {
+    #main-container #main-sections-container section article{
+	   height: 660px;
+	   background-color: #2196F3;
+	}	
 }
 
 #main-container #main-sections-container section article img{
-	float: left;
+	float: left; /*Coloca la imagen a la izquierda*/
 	margin-right: 15px;
+	WIDTH:332px;
+	height:201px;
+}
+@media (max-width: 375px) {
+    #main-container #main-sections-container section article img{
+	   margin: 15px 0 20px 19px
+	}	
 }
 
+/*Alinea el texto*/
 #main-container #main-sections-container section article p{
 	margin: 10px;
 	font-size: 15px;
 	letter-spacing: 1px;
 	text-align: justify;
 }
+@media (max-width: 375px) {
+    #main-container #main-sections-container section article p{
+	   font-size: 14px; 
+	   background-color: #FFE57F;
+    }
+}
+

@@ -1,0 +1,64 @@
+{
+	"data": {
+		"sections": [{
+			"id": 1,
+			"title": "apocalipsis Sabah Nur",
+			"image": "img/ap.png",
+			"article": " Apocalipsis afirma haber sembrado el crecimiento, el juicio y la destrucción, Apocalipsis cree que sólo los fuertes merecen vivir y rechaza el concepto de la coexistencia entre humanos y mutantes, creyendo que los mutantes deberían dominar la Tierra. Considera que sólo una guerra abierta entre hombres y mutantes podrá ser la criba mediante la que los mutantes se fortalecerán o morirán sobreviviendo solo los más dignos de gobernar la Tierra. El grupo mutante X-Men se cruzó por primera vez en el camino de Apocalipsis cuando este envió a la Alianza del Mal a capturar a Michael Nowman, un mutante con la capacidad de aumentar los poderes sobrehumanos de otros mutantes. Factor X fracasó en el intento de evitar el secuestro, pero pudo seguir a la Alianza hasta la base de Apocalipsis situada en California, finalmente los planes de Apocalipsis se frustraron con la muerte de Nowman."		
+			}, {
+			"id": 2,
+			"title": "the first mutant",
+			"image": "img/apox.jpg",
+			"article": " Apocalipsis afirma haber sembrado el crecimiento, el juicio y la destrucción, Apocalipsis cree que sólo los fuertes merecen vivir y rechaza el concepto de la coexistencia entre humanos y mutantes, creyendo que los mutantes deberían dominar la Tierra. Considera que sólo una guerra abierta entre hombres y mutantes podrá ser la criba mediante la que los mutantes se fortalecerán o morirán sobreviviendo solo los más dignos de gobernar la Tierra. El grupo mutante X-Men se cruzó por primera vez en el camino de Apocalipsis cuando este envió a la Alianza del Mal a capturar a Michael Nowman, un mutante con la capacidad de aumentar los poderes sobrehumanos de otros mutantes. Factor X fracasó en el intento de evitar el secuestro, pero pudo seguir a la Alianza hasta la base de Apocalipsis situada en California, finalmente los planes de Apocalipsis se frustraron con la muerte de Nowman."
+		}, {
+			"id": 3,
+			"title": "apocalipsis Sabah Nur",
+			"image": "img/ap.png",
+			"article": " Apocalipsis afirma haber sembrado el crecimiento, el juicio y la destrucción, Apocalipsis cree que sólo los fuertes merecen vivir y rechaza el concepto de la coexistencia entre humanos y mutantes, creyendo que los mutantes deberían dominar la Tierra. Considera que sólo una guerra abierta entre hombres y mutantes podrá ser la criba mediante la que los mutantes se fortalecerán o morirán sobreviviendo solo los más dignos de gobernar la Tierra. El grupo mutante X-Men se cruzó por primera vez en el camino de Apocalipsis cuando este envió a la Alianza del Mal a capturar a Michael Nowman, un mutante con la capacidad de aumentar los poderes sobrehumanos de otros mutantes. Factor X fracasó en el intento de evitar el secuestro, pero pudo seguir a la Alianza hasta la base de Apocalipsis situada en California, finalmente los planes de Apocalipsis se frustraron con la muerte de Nowman."
+		}, {
+			"id": 4,
+			"title": "tthe first mutant",
+			"image": "img/apox.jpg",
+			"article": " Apocalipsis afirma haber sembrado el crecimiento, el juicio y la destrucción, Apocalipsis cree que sólo los fuertes merecen vivir y rechaza el concepto de la coexistencia entre humanos y mutantes, creyendo que los mutantes deberían dominar la Tierra. Considera que sólo una guerra abierta entre hombres y mutantes podrá ser la criba mediante la que los mutantes se fortalecerán o morirán sobreviviendo solo los más dignos de gobernar la Tierra. El grupo mutante X-Men se cruzó por primera vez en el camino de Apocalipsis cuando este envió a la Alianza del Mal a capturar a Michael Nowman, un mutante con la capacidad de aumentar los poderes sobrehumanos de otros mutantes. Factor X fracasó en el intento de evitar el secuestro, pero pudo seguir a la Alianza hasta la base de Apocalipsis situada en California, finalmente los planes de Apocalipsis se frustraron con la muerte de Nowman."
+		}, {
+			"id": 5,
+			"title": "apocalipsis Sabah Nur",
+			"image": "img/ap.png",
+			"article": " Apocalipsis afirma haber sembrado el crecimiento, el juicio y la destrucción, Apocalipsis cree que sólo los fuertes merecen vivir y rechaza el concepto de la coexistencia entre humanos y mutantes, creyendo que los mutantes deberían dominar la Tierra. Considera que sólo una guerra abierta entre hombres y mutantes podrá ser la criba mediante la que los mutantes se fortalecerán o morirán sobreviviendo solo los más dignos de gobernar la Tierra. El grupo mutante X-Men se cruzó por primera vez en el camino de Apocalipsis cuando este envió a la Alianza del Mal a capturar a Michael Nowman, un mutante con la capacidad de aumentar los poderes sobrehumanos de otros mutantes. Factor X fracasó en el intento de evitar el secuestro, pero pudo seguir a la Alianza hasta la base de Apocalipsis situada en California, finalmente los planes de Apocalipsis se frustraron con la muerte de Nowman."
+		}],
+		"menu": [{
+			"id": 1,
+			"title": "X-men news"
+		}, {
+			"id": 2,
+			"title": "X-men news"
+		}, {
+			"id": 3,
+			"title": "X-men news"
+		},{
+			"id": 4,
+			"title": "X-men news"
+		},{
+			"id": 5,
+			"title": "X-men news"
+		},{
+			"id": 6,
+			"title": "X-men news"
+		},{
+			"id": 7,
+			"title": "X-men news"
+		},{
+			"id": 8,
+			"title": "X-men news"
+		},{
+			"id": 9,
+			"title": "X-men news"
+		},{
+			"id": 10,
+			"title": "X-men news"
+		},{
+			"id": 11,
+			"title": "X-men news"
+		}]
+	}
+}
