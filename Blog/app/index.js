@@ -149,17 +149,25 @@
 	})
 	
 	//Función que detecta cuando se está en el celular o en PC
-	//La utilizo porque al cambiar el tamño de celular a PC, si previamente presioné el boton de hamburguesa, se cambia el tamaño de los contenedores.
-    /*window.onresize = resize;
+	//La utilizo porque al cambiar el tamño de celular a PC, si previamente presioné el boton de hamburguesa, se cambia la visibilidad de los contenedores.
+    window.onresize = resize;
 	function resize()
 	{
-	   if(screen.width!=375){
-		  var contSecciones = document.getElementById('main-sections-container');
-		  var contMenu = document.getElementById('main-nav');
+	   var contSecciones = document.getElementById('main-sections-container');
+	   var contMenu = document.getElementById('main-nav');
+	   var obj = document.getElementById('boton');
+		  
+	   if(screen.width>375){
+		  
 		  contSecciones.style.display = "block";
 	      contMenu.style.display = "block";
 	   }
-	}*/
+	   if(screen.width<376){
+		  contSecciones.style.display = "block";
+	      contMenu.style.display = "none"; 
+		  obj.style.transform = "rotate(0deg)";
+	   }
+	}
 		
 	//Uso este if para que siempre sean visibles los contenedores, si es que se está viendo desde la PC y no del Iphone 6
 })();
